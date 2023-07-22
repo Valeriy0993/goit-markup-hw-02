@@ -98,6 +98,12 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+  border-radius: 4px;
+  background: var(--color-ocean);
+}
+
 /*? ----------ADVANTAGES---------- */
 
 .advt-title-three {
