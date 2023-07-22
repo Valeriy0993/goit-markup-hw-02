@@ -1,7 +1,7 @@
 body {
-  font-family: "roboto", sans-serif;
-  background-color: var(--color-cloud);
-  color: var(--color-navy-blue);
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-slate);
 }
 
 :root {
@@ -30,7 +30,7 @@ body {
 /*? ----------HEADER---------- */
 
 .header-logo {
-  color: var(--navyblue);
+  color: var(--color-iris);
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -39,8 +39,8 @@ body {
   text-transform: uppercase;
 }
 
-.header-logo-web {
-  color: var(--color-iris);
+.header-logo-studio {
+  color: var(--color-navy-blue);
 }
 
 .header-nav-link {
@@ -49,6 +49,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--color-navy-blue);
 }
 
 .header-nav-link:hover,
@@ -71,6 +72,10 @@ body {
   color: var(--color-ocean);
 }
 
+.address-list {
+  font-style: normal;
+}
+
 /*? ----------HERO---------- */
 
 .hero-section {
@@ -88,14 +93,13 @@ body {
 
 .hero-btn {
   color: var(--color-white);
-  font-family: inherit;
+  font-family: "Roboto" sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  border-radius: 4px;
   background: var(--color-iris);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .hero-btn:hover,
@@ -135,6 +139,10 @@ body {
 
 /*? ----------OUR TEAM---------- */
 
+.section-our-team {
+  background-color: var(--color-cloud);
+}
+
 .team-title {
   color: var(--color-navy-blue);
   text-align: center;
@@ -160,11 +168,7 @@ body {
   letter-spacing: 0.02em;
 }
 .team-list {
-  border-radius: 0px 0px 4px 4px;
   background: var(--color-white);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 /*? ----------FOOTER---------- */
@@ -174,7 +178,7 @@ body {
 }
 
 .footer-title {
-  color: var(--color-cloud);
+  color: var(--color-iris);
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -183,8 +187,8 @@ body {
   text-transform: uppercase;
 }
 
-.footer-title-web {
-  color: var(--color-iris);
+.footer-title-studio {
+  color: var(--color-cloud);
 }
 
 .footer-paragraph {
@@ -199,12 +203,10 @@ body {
 /*! ///////////////////////////// */
 
 .main-btn {
-  border-radius: 4px;
-  border: 1px solid var(--color-cornflower);
   background: var(--color-cloud);
   color: var(--color-iris);
   text-align: center;
-  font-family: inherit;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -214,7 +216,6 @@ body {
 
 .main-btn:hover,
 .main-btn:focus {
-  border-radius: 4px;
   background: var(--color-ocean);
   color: var(--color-white);
   text-align: center;
