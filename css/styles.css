@@ -18,6 +18,22 @@ body {
   --color-white: #ffffff;
   --color-dairy: #fcfcfc;
 }
+/*! ///////////////////////// */
+/*! ----------RESET---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1158px;
+  max-width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 
 .link {
   text-decoration: none;
@@ -27,7 +43,71 @@ body {
   list-style: none;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*! ----------RESET---------- */
+/*! ///////////////////////// */
+
+/*? ////////////////////////// */
 /*? ----------HEADER---------- */
+
+.navigation-menu {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-left: 76px;
+  gap: 40px;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-cornflower);
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
+}
 
 .header-logo {
   color: var(--color-iris);
@@ -71,11 +151,16 @@ body {
   color: var(--color-ocean);
 }
 
-.address-list {
+.address-menu {
   font-style: normal;
+  margin-left: auto;
 }
 
-/*? ----------HERO---------- */
+/*? ----------HEADER---------- */
+/*? ////////////////////////// */
+
+/*! //////////////////////// */
+/*! ----------HERO---------- */
 
 .hero-section {
   background-color: var(--color-navy-blue);
@@ -86,7 +171,11 @@ body {
   text-align: center;
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 0.02em;
+  width: 496px;
+  padding-top: 188px;
+  padding-bottom: 48px;
+  margin: 0 auto;
+  display: block;
 }
 
 .hero-btn {
@@ -98,6 +187,15 @@ body {
   letter-spacing: 0.04em;
   background: var(--color-iris);
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border: none;
+  border-radius: 4px;
+  background: var(--color-iris);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn:hover,
@@ -105,6 +203,14 @@ body {
   background: var(--color-ocean);
 }
 
+.btn-hero-cont {
+  padding-bottom: 188px;
+}
+
+/*! ----------HERO---------- */
+/*! //////////////////////// */
+
+/*? ////////////////////////////// */
 /*? ----------ADVANTAGES---------- */
 
 .advt-title-three {
@@ -113,6 +219,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .advt-paragraph {
@@ -122,7 +229,22 @@ body {
   letter-spacing: 0.02em;
 }
 
-/*? ----------WE DOING---------- */
+.advantages-list {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  gap: 24px;
+}
+
+.advantages-item {
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+/*? ----------ADVANTAGES---------- */
+/*? ////////////////////////////// */
+
+/*! //////////////////////////// */
+/*! ----------WE DOING---------- */
 
 .we-doing-title {
   color: var(--color-navy-blue);
@@ -131,8 +253,23 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
 }
 
+.doing-list {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+
+.doing-item {
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+/*! //////////////////////////// */
+/*! ----------WE DOING---------- */
+
+/*? //////////////////////////// */
 /*? ----------OUR TEAM---------- */
 
 .section-our-team {
@@ -146,6 +283,8 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-top: 120px;
+  margin-bottom: 72px;
 }
 
 .team-title-three {
@@ -154,6 +293,8 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-paragraph {
@@ -161,12 +302,30 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-.team-list {
-  background: var(--color-white);
+  padding-bottom: 32px;
 }
 
-/*? ----------FOOTER---------- */
+.team-list {
+  display: flex;
+  text-align: center;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+
+.team-list-item {
+  background: var(--color-white);
+  width: calc((100% - 3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+/*? ----------OUR TEAM---------- */
+/*? //////////////////////////// */
+
+/*! ////////////////////////// */
+/*! ----------FOOTER---------- */
 
 .footer-style {
   background-color: var(--color-navy-blue);
@@ -191,11 +350,33 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 17.5px;
 }
 
+.footer-container {
+  display: block;
+  width: 264px;
+  padding-top: 101.5px;
+  padding-bottom: 100px;
+}
+
+/*! ----------FOOTER---------- */
+/*! ////////////////////////// */
+
+/*? ///////////////////////////// */
 /*! ///////////////////////////// */
 /*? ----------PORTFOLIO---------- */
 /*! ///////////////////////////// */
+/*? ///////////////////////////// */
+
+.main-btn-list {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding-top: 96px;
+  padding-bottom: 72px;
+  gap: 24px;
+}
 
 .main-btn {
   background: var(--color-cloud);
@@ -207,6 +388,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--color-cornflower);
 }
 
 .main-btn:hover,
@@ -214,6 +398,20 @@ body {
   background: var(--color-ocean);
   color: var(--color-white);
   text-align: center;
+}
+
+.main-list {
+  padding-bottom: 120px;
+}
+
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.card-container {
+  padding: 32px 16px;
 }
 
 .portfolio-title {
@@ -231,4 +429,11 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
+
+/*? ///////////////////////////// */
+/*! ///////////////////////////// */
+/*? ----------PORTFOLIO---------- */
+/*! ///////////////////////////// */
+/*? ///////////////////////////// */
